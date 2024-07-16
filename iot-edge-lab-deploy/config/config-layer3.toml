@@ -1,0 +1,18 @@
+parent_hostname = 
+hostname = 
+trust_bundle_cert = "file:///var/aziot/certs/azure-iot-test-only.root.ca.cert.pem"
+
+[edge_ca]
+cert = "file:///var/aziot/certs/iot-edge-device-ca-layer2-full-chain.cert.pem"
+pk = "file:///var/aziot/secrets/iot-edge-device-ca-layer2.key.pem"
+
+[agent]
+name = "edgeAgent"
+type = "docker"
+
+[agent.config]
+image = "mcr.microsoft.com/azureiotedge-agent:1.5"
+
+[provisioning]
+source = "manual"
+connection_string = 

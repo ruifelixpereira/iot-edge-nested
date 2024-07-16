@@ -1,0 +1,8 @@
+*.pem
+*.cer
+*.pfx
+
+ca-certificates/*.old
+ca-certificates/index.txt
+ca-certificates/serial
+ca-certificates/*.attr
